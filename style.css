@@ -1,37 +1,55 @@
+/* Base Styles */
 body {
   font-family: 'Nunito', sans-serif;
+  color: black;
 }
-
-h1 {
+h1, h2 {
   text-align: center;
+}
+h1 {
   font-size: 200%;
 }
-
 h2 {
-  text-align: center;
-  font-weight: 100;
   font-size: 110%;
+  font-weight: 100;
 }
+/* Layout Styles */
+/* e.g. header, footer, section, aside */
+.hero {
 
+}
+.signup_form {
+
+}
 nav {
   display: flex;
   flex-direction: column;
   align-items: flex-end;
-
 }
-
 nav li {
-  display: inline-block;
-  margin-top: 0;
-  margin-right: 12px;
-  margin-left: 12px;
-  margin-bottom: 0;
-  text-decoration: underline;
+    display: inline-block;
+    margin: 0 1em 1em 0;
 }
-
-.blue-button {
+/* Modules */
+nav a {
+    text-decoration: none;
+    color: black;
+  }
+.hero__header {
+  line-height: 0;
+}
+.btn-sch {
+  border-radius: 6px;
   background-color: blue;
-  text-decoration: none !important;
+  padding: 0.5em;
+  width: 9em;
+  text-align: center;
+  display: inline-block;
+  color: white;
+}
+.btn-submt {
+  background-color: blue;
+  text-decoration: none;
   color: white;
   padding: 0.5em;
   border-radius: 6px;
@@ -43,7 +61,7 @@ nav li {
 .signup-form form input[type=submit] {
   border: none;
   background-color: blue;
-  text-decoration: none !important;
+  text-decoration: none;
   color: white;
   padding: 0.5em;
   border-radius: 6px;
